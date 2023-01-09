@@ -7,7 +7,7 @@ export interface TextInputRootProps {
 
 function TextInputRoot(props:TextInputRootProps){
     return(
-        <div className='outline ountline-2 outline-Verde-900 rounded rounded-2 flex gap-4 py-3 px-4'>
+        <div className='outline ountline-2 outline-Verde-900 rounded rounded-2 flex gap-4 py-3 px-4 transition duration-200 hover:-translate-y-1'>
             {props.children}
         </div>
     )
