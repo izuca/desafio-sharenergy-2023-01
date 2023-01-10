@@ -20,7 +20,7 @@ export function Login (){
             <form action="" className='flex flex-col items-stretch w-full max-w-sm mt-10 gap-5'>
                 <label htmlFor="User">
                     <TextInput.Root>
-                        <TextInput.Icon>
+                        <TextInput.Icon className='text-Verde-900'>
                             <User />
                         </TextInput.Icon>
                         <TextInput.Input id='email' placeholder='Usuário'/>
@@ -29,7 +29,7 @@ export function Login (){
 
                 <label htmlFor="password">
                     <TextInput.Root>
-                        <TextInput.Icon>
+                        <TextInput.Icon className='text-Verde-900'>
                             <Lock />
                         </TextInput.Icon>
                         <TextInput.Input id='password' type='password' placeholder='Senha'/>
