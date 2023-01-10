@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { Navbar } from '../components/Navbar'
 
 const url:string = 'https://randomuser.me/api/?results=20'
 interface User {
@@ -26,15 +27,19 @@ export function RandomUser(){
     },[])
     
     return (
-        <ul>
-            {users.map( (user:User) => {
-                return (
-                    <li key={user.name.first}>
-                        <strong>{user.name.title} {user.name.first} {user.name.last}</strong>
-                    </li>
-                )
-            })}
+         
+        <div>
+            <Navbar/>
+            <ul>
+                {users.map( (user:User) => {
+                    return (
+                        <li key={user.name.first}>
+                            <strong>{user.name.title} {user.name.first} {user.name.last}</strong>
+                        </li>
+                    )
+                })}
             
-        </ul>
+            </ul>
+        </div>
     )
 }

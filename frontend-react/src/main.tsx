@@ -9,6 +9,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Login />
+  },
+  {
+    path:'/RandomUser',
+    element:<RandomUser/>
   }
 ])
 
