@@ -5,6 +5,7 @@ import './styles/global.css'
 import { RandomDog } from './routes/RandomDog'
 import { RandomUser } from './routes/RandomUser'
 import { Login } from './routes/Login'
+import { HttpCat } from './routes/HttpCat'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path:'/RandomUser',
     element:<RandomUser/>
+  },
+  {
+    path:'/HTTpCat',
+    element:<HttpCat/>
   }
 ])
 

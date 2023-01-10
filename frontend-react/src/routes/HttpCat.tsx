@@ -1,9 +1,15 @@
-import react from 'react'
+import { Footer } from '../components/Footer'
+import { Navbar } from '../components/Navbar'
+import { Navbar2 } from '../components/Navbar2'
 
-export function About (){
+
+export function HttpCat (){
     return (
-        <div>
-            <h1>About</h1>
+        <div className='flex flex-col'>
+            <Navbar/>
+            <Navbar2 />
+            
+            <Footer/>
         </div>
     )
 }
