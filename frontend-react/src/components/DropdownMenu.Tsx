@@ -15,8 +15,8 @@ export function DropdownMenu(){
                 </button>
             </DropdownMenuPrimitive.Trigger>
 
-        <DropdownMenuPrimitive.Portal className=' bg-Verde-900'>
-            <DropdownMenuPrimitive.Content className='flex flex-col gap-2  bg-Verde-900'>
+        <DropdownMenuPrimitive.Portal >
+            <DropdownMenuPrimitive.Content className='flex flex-col gap-2 bg-Verde-900'>
                 <DropdownMenuPrimitive.Item asChild >
                     <a href="/RandomUser" className='font-light text-Branco  text-md hover:outline-none  bg-Verde-900'>Random User Generator</a>
                 </DropdownMenuPrimitive.Item>

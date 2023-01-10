@@ -1,45 +1,20 @@
-import axios from 'axios'
-import { useState, useEffect } from 'react'
-import { Navbar } from '../components/Navbar'
 
-const url:string = 'https://randomuser.me/api/?results=20'
-interface User {
-    gender: string,
-    name: {
-        title: string,
-        first: string,
-        last: string
-    },
-    city: string,
-}
+import { Footer } from '../components/Footer'
+import { Navbar } from '../components/Navbar'
+import { Table } from '../components/Table'
+
+
 
 export function RandomUser(){
-    const [users, setUsers]:any = useState<User[]>([])
-
-    useEffect(() => {
-        axios.get(url)
-            .then((response) => {
-                setUsers(response.data.results)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-    },[])
+   
     
     return (
          
-        <div>
+        <div className='flex flex-col'>
             <Navbar/>
-            <ul>
-                {users.map( (user:User) => {
-                    return (
-                        <li key={user.name.first}>
-                            <strong>{user.name.title} {user.name.first} {user.name.last}</strong>
-                        </li>
-                    )
-                })}
+            <Table/>
             
-            </ul>
+            <Footer/>
         </div>
     )
 }
