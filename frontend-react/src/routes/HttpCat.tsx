@@ -10,7 +10,7 @@ export function HttpCat (){
             <Navbar2 />
             <div className='w-1/3 py-9 flex flex-col justify-center items-center gap-8'>
                 <Select/>
-                <img src="https://http.cat/404" alt=""/>
+                
             </div>
             <Footer/>
         </div>
