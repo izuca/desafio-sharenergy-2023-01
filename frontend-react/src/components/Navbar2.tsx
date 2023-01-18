@@ -7,7 +7,7 @@ export function Navbar2 (){
     
 
     return(
-        <div className="flex bg-Verde-400 px-8 py-2 items-center justify-between">
+        <div className="flex bg-Verde-400 px-8 py-3 w-full items-center justify-between">
             <h2 className="text-lg text-Branco">Random User Generator</h2>
             <div className="border-b-2 border-Branco flex items-center gap-1 ">
                 <MagnifyingGlass size={24} className='text-Branco' />
