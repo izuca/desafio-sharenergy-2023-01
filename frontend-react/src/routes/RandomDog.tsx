@@ -12,6 +12,10 @@ export function RandomDog (){
     const [dog, setDog]:any = useState([])
 
     useEffect(()=>{
+        fetchRandomDogs()
+    }, [])
+
+    const fetchRandomDogs = async() => {
         axios.get(url)
         .then((response) => {
             setDog(response.data)
@@ -20,16 +24,19 @@ export function RandomDog (){
         .catch((error) => {
             console.log(error)
         })
+    }
 
-    }, [])
-
+    const handleReloadClick = () => {
+        fetchRandomDogs()
+    }
 
     return (
         <div className='flex flex-col'>
             <Navbar/>
             <Navbar2 url='Random Dog'/>
-            <div className='flex justify-center items-center'>
+            <div className='flex flex-col justify-center items-center' >
                 <img src={dog.message} alt="" />
+                <ArrowCounterClockwise weight='thin' size={64} className='text-Verde-900 hover:cursor-pointer' onClick={handleReloadClick}/>
             </div>
             <Footer/>
         </div>

@@ -2,7 +2,7 @@ import { DropdownMenu } from './DropdownMenu';
 import { SunDim } from 'phosphor-react';
 import { UserCircle } from 'phosphor-react';
 
-export function Navbar (){
+export const Navbar = () => {
     return (
         <nav className='bg-Verde-900 w-full w-max-screen py-2 flex items-center justify-between px-8'>
             <div className='flex items-center gap-2'>
