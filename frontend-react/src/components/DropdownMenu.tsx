@@ -24,7 +24,7 @@ export function DropdownMenu(){
                     <a href="/HttpCat" className='font-light text-Branco text-md hover:outline-none' >HTTP Cat</a>
                 </DropdownMenuPrimitive.Item>
                 <DropdownMenuPrimitive.Item asChild >
-                    <a href="/RandomDogs" className='font-light text-Branco text-md hover:outline-none'>Random Dog</a>
+                    <a href="/RandomDog" className='font-light text-Branco text-md hover:outline-none'>Random Dog</a>
                 </DropdownMenuPrimitive.Item>
                 <DropdownMenuPrimitive.Item asChild className='bg-Verde-900' >
                     <a href="/Clientes" className='font-light text-Branco text-md hover:border-none ' >Clientes</a>

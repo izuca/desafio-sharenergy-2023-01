@@ -10,7 +10,7 @@ export function RandomUser(){
          
         <div className='flex flex-col'>
             <Navbar/>
-            <Navbar2 />
+            <Navbar2 url='Random User' hasInput/>
             <Table/>
             
             <Footer/>

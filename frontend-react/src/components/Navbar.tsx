@@ -1,7 +1,6 @@
-import { DropdownMenu } from './DropdownMenu'
-import {SunDim} from 'phosphor-react'
-import {UserCircle} from 'phosphor-react'
-import react from 'react'
+import { DropdownMenu } from './DropdownMenu';
+import { SunDim } from 'phosphor-react';
+import { UserCircle } from 'phosphor-react';
 
 export function Navbar (){
     return (

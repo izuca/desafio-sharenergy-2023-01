@@ -7,7 +7,7 @@ export function HttpCat (){
     return (
         <div className='flex flex-col items-center'>
             <Navbar/>
-            <Navbar2 />
+            <Navbar2 url='HTTPCat'/>
             <div className='w-1/3 py-9 flex flex-col justify-center items-center gap-8'>
                 <Select/>
                 

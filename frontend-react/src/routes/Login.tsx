@@ -2,9 +2,9 @@ import { Button } from '../components/Button'
 import { Checkbox } from '../components/Checkbox'
 import { TextInput } from '../components/TextInput'
 import { Text } from '../components/Text'
-import {User} from 'phosphor-react'
-import {Lock} from 'phosphor-react'
-import {SunDim} from 'phosphor-react'
+import { User } from 'phosphor-react'
+import { Lock } from 'phosphor-react'
+import { SunDim } from 'phosphor-react'
 
 export function Login (){
     

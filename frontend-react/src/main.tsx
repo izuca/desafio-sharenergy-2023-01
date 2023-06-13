@@ -18,7 +18,11 @@ const router = createBrowserRouter([
   {
     path:'/HTTpCat',
     element:<HttpCat/>
-  }
+  },
+  {
+    path:'/RandomDog',
+    element:<RandomDog/>
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
