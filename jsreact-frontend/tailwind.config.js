@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    './src/**/*.tsx',
+    './src/**/*.jsx',
   ],
   theme: {
     colors:{
@@ -9,7 +9,7 @@ module.exports = {
       Verde:{
         900: '#00A2A2',
         400: '#4591AB'
-      }
+      },
     },
     extend: {
       fontFamily:{
@@ -19,3 +19,4 @@ module.exports = {
   },
   plugins: [require('daisyui')],
 }
+

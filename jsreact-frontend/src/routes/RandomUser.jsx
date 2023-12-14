@@ -1,7 +1,7 @@
-import { Footer } from '../components/Footer'
-import { Navbar } from '../components/Navbar'
-import { Navbar2 } from '../components/Navbar2'
-import { Table } from '../components/Table'
+import { Footer } from '../src/components/Footer'
+import { Navbar } from '../src/components/Navbar'
+import { Navbar2 } from '../src/components/Navbar2'
+import { Table } from '../src/components/Table'
 
 export function RandomUser(){
    
