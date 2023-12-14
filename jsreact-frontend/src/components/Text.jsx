@@ -3,10 +3,10 @@ import { ReactNode } from 'react'
 import { clsx } from 'clsx'
 
 export interface TextProps {
-    children: ReactNode
-    asChild?: boolean
-    size?: 'sm' | 'md' | 'lg'
-    className?: string
+    children: ReactNode;
+    asChild?: boolean;
+    size?: 'sm' | 'md' | 'lg';
+    className?: string;
 }
 
 export function Text({size = 'md', children, asChild, className}) {
@@ -26,3 +26,5 @@ export function Text({size = 'md', children, asChild, className}) {
         </Comp>
     )
 }
+
+
