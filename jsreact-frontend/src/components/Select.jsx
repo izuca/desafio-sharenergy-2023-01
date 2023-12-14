@@ -10,7 +10,7 @@ export function Select() {
 
     return (
         <div>
-            <select onClick={(e:any) => {setCodigo(e.target.value)}} className="select select-ghost w-full max-w-xs">
+            <select onClick={(e) => {setCodigo(e.target.value)}} className="select select-ghost w-full max-w-xs">
                 <option disabled selected>Escolha HTTP Code</option>
 
                 {httpCodes.map((httpCode) => {

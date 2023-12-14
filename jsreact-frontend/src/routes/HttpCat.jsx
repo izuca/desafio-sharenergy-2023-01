@@ -1,7 +1,7 @@
-import { Footer } from '../src/components/Footer'
-import { Navbar } from '../src/components/Navbar'
-import { Navbar2 } from '../src/components/Navbar2'
-import { Select } from '../src/components/Select'
+import { Footer } from '../components/Footer.jsx'
+import { Navbar } from '../components/Navbar.jsx'
+import { Navbar2 } from '../components/Navbar2.jsx'
+import { Select } from '../components/Select.jsx'
 
 export function HttpCat (){
     return (

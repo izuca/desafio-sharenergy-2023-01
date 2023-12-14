@@ -1,26 +1,10 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-const url:string = 'https://randomuser.me/api/?results=20'
-interface User {
-    name: {
-        title: string,
-        first: string,
-        last: string
-    },
-    email: string,
-    login: {
-        username: string,
-    },
-    dob: {
-        age: number
-    },
-    picture: {
-        thumbnail: string,
-    }
-}
+const url = 'https://randomuser.me/api/?results=20'
+
 export function Table () {
-    const [users, setUsers]:any = useState<User[]>([])
+    const [users, setUsers] = useState([])
 
     useEffect(() => {
         axios.get(url)
@@ -47,7 +31,7 @@ export function Table () {
       <tbody>
 
       
-        {users.map( (user:User) => {
+        {users.map( user => {
             return (
                 
              <tr key={user.login.username}>

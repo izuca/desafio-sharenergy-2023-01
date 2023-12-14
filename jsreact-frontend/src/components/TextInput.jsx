@@ -3,12 +3,9 @@ import { Slot } from '@radix-ui/react-slot'
 import clsx from 'clsx'
 
 
-export interface TextInputRootProps {
-    children: ReactNode,
-    className?: string,
-}
 
-function TextInputRoot(props:TextInputRootProps){
+
+function TextInputRoot(props){
     return(
         <div className={clsx(
             'outline ountline-2 outline-Verde-900 rounded rounded-2 flex gap-4 py-3 px-4 transition duration-200 hover:-translate-y-1',
@@ -23,12 +20,9 @@ function TextInputRoot(props:TextInputRootProps){
 TextInputRoot.displayName = 'TextInput.Root'
 
 
-export interface TextInputIconProps{
-    children: ReactNode,
-    className?: string,
-}
 
-function TextInputIcon(props:TextInputIconProps){
+
+function TextInputIcon(props){
     return(
         <Slot className={clsx(
             'w-6 h-6',
@@ -41,9 +35,9 @@ function TextInputIcon(props:TextInputIconProps){
 TextInputIcon.displayName = 'TextInput.Icon'
 
 
-export interface TextInputInputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
-export function TextInputInput (props: TextInputInputProps){
+
+export function TextInputInput (props){
     return (
         <input className='text-Verde-900 font-light bg-transparent flex-1 outline-none text-md placeholder:text-Verde-900 ' {...props} />
     )

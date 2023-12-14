@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Navbar } from '../src/components/Navbar'
-import { Navbar2 } from '../src/components/Navbar2'
-import { Footer } from '../src/components/Footer'
+import { Navbar } from '../components/Navbar'
+import { Navbar2 } from '../components/Navbar2'
+import { Footer } from '../components/Footer'
 import { ArrowCounterClockwise } from 'phosphor-react'
 
 const url= 'https://dog.ceo/api/breeds/image/random'
