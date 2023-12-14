@@ -5,7 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     children: ReactNode
 }
 
-export function Button ({children, className, ...props}: ButtonProps) {
+export function Button ({children, className, ...props}) {
     return (
         <button className={clsx(
             'bg-Verde-900 px-24 py-3 text-Branco rounded-lg font-thin w-full transition-colors duration-200 hover:bg-Verde-400',

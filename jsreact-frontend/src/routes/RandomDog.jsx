@@ -5,11 +5,11 @@ import { Navbar2 } from '../src/components/Navbar2'
 import { Footer } from '../src/components/Footer'
 import { ArrowCounterClockwise } from 'phosphor-react'
 
-const url:string = 'https://dog.ceo/api/breeds/image/random'
+const url= 'https://dog.ceo/api/breeds/image/random'
 
 
 export function RandomDog (){
-    const [dog, setDog]:any = useState([])
+    const [dog, setDog] = useState([])
 
     useEffect(()=>{
         fetchRandomDogs()
